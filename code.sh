@@ -1,15 +1,8 @@
 #!/bin/bash
 
-echo "ARO-Platform"
-
 if (git clone -b RelianceFebruaryDemo git@octocat.altvil.com:AIT/ARO-Platform.git) then
-
-echo "DATA-Directory"
-
-    if (git clone -b FebruaryDemo git@octocat.altvil.com:AIT/aro-data-reliance.git) then
-
-echo "ETL-Directory"
-        if (git clone -b FebruaryDemo git@octocat.altvil.com:AIT/aro-etl-reliance.git) then
+    if (git clone -b FebruaryDemo git@octocat.altvil.com:AIT/aro-data-reliance.git ARO-Platform/data) then
+        if (git clone -b FebruaryDemo git@octocat.altvil.com:AIT/aro-etl-reliance.git ARO-Platform/db) then
             exit 1
         fi
     fi
