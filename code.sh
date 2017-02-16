@@ -1,9 +1,5 @@
 #!/bin/bash
 
-echo "Make root directories"
-mkdir RM
-cd RM/
-
 echo "ARO-Platform"
 
 if (git clone -b RelianceFebruaryDemo git@octocat.altvil.com:AIT/ARO-Platform.git) then
