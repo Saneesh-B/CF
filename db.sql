@@ -1,2 +1,5 @@
 ALTER DATABASE aro OWNER to aro;
-create extension postgis;
+
+ALTER SCHEMA public OWNER TO aro;
+GRANT ALL PRIVILEGES ON SCHEMA public TO aro;
+
